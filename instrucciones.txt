@@ -1,0 +1,17 @@
+Este es un sistema que muestra una encuesta y resultados con gráficos por pregunta y una tabla resúmen con los resultados. 
+Para su instalación realice los siguientes pasos en el orden especificado:
+
+1-Descargue o clone el repositorio dentro de la carpeta public de su nginx
+2-Dentro de la carpeta encuesta (raiz del sitio), encontará una carpeta llamada db que contiene un archivo encuesta.sql que deberá ejecutar con algún gestor
+de base de datos para poder crear la base de datos y la tabla correspondiente que almacena los resultados de la encuesta. El archivo ya contiene la creación 
+tanto de la base como de la tabla y contiene datos de ejemplo.
+3-Modifique el archivo conectarse.php que se encuentra dentro de la carpeta backend  con las credenciales de su base de datos: 
+
+    var $dirBaseDatos = "localhost";
+    var $BaseDatos = "encuesta";
+    var $Usuario = "root"; //coloque su usuario del motor de base de datos
+    var $Password = ''; //coloque su contraseña del motor de base de datos
+
+4-Una vez instalado tanto el sitio como la base podrá acceder desde cualquier navegador a localhost/encuesta y podrá comenzar a cargar los datos.
+5-Cuando realice una carga de los datos (se valida que se completen todos los campos) el sistema lo dirigirá a la siguiente pantalla donde podrá visualizar
+los resultados y el botón para volver a cargar una nueva encuesta.
