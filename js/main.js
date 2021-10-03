@@ -67,7 +67,12 @@
         if (!$(hobby).is(':checked')) {
             showValidate($('.validate-input .input-radio100-hobby'));
             check = false;
+        }else{
+            if (($("input:radio[name='hobby']:checked").val() == 0)){ 
+                check = true;
+            }
         }
+        
         if (check){ //si esta ok el formulario, guardo los datos
             $.ajax({
                 type: "POST",
