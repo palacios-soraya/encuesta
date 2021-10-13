@@ -5,7 +5,7 @@ class baseDatos {
     var $dirBaseDatos = "localhost";
     var $BaseDatos = "encuesta";
     var $Usuario = "root"; //coloque su usuario del motor de base de datos
-    var $Password = ''; //coloque su contraseña del motor de base de datos
+    var $Password = 'test123'; //coloque su contraseña del motor de base de datos
     var $Conexion_ID = 0;
     var $Consulta_ID = 0;
     var $Errno = 0;
